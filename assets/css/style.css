@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    z-index: 2; /* Ensure the header is above the video */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: semi-transparent background for better readability */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px; /* Add some space between the title and the nav */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.video-background {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+}
+
+.video-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffcc00; /* Gold color for the caption */
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+    z-index: 1; /* Ensure the caption is above the video */
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #000;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.game-description {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; /* Add some padding */
+    text-align: left; /* Align text to the left */
+}
+
+.description-content {
+    display: flex; /* Use flexbox for the content */
+    align-items: center; /* Center items vertically */
+}
+
+.description-content img {
+    max-width: 300px; /* Set a max width for the image */
+    margin-right: 20px; /* Space between the image and text */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.description-content p {
+    max-width: 600px; /* Set a max width for the paragraph */
+    line-height: 1.5; /* Improve readability */
+}
+
+.game-description-2 {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; /* Add some padding */
+    text-align: left; /* Align text to the left */
+}
+
+.description-content-2 {
+    display: flex; /* Use flexbox for the content */
+    align-items: center; /* Center items vertically */
+}
+
+.description-content-2 img {
+    max-width: 300px; /* Set a max width for the image */
+    margin-right: 20px; /* Space between the image and text */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.description-content-2 p {
+    max-width: 600px; /* Set a max width for the paragraph */
+    line-height: 1.5; /* Improve readability */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #ffcc00; /* Gold border for images */
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+footer {
+    background-color: #000;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.get-the-game {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+    background-color: #ffcc00; /* Gold color for the button */
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
